@@ -16,6 +16,6 @@ def yes_no(question):
 valid = False 
 while not valid:
   show_instructions = yes_no("Have you watched this before ?: ")
-  if show instructions == "no":
+  if show_instructions == "no":
     print("Instructions")
       
