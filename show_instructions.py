@@ -8,7 +8,7 @@ def yes_no(question):
         else:
             print("Invalid input. Please enter 'yes' or 'no'.")
 
-show_instructions = yes_no("Have you watched this before? (yes/no): ")
+show_instructions = yes_no("Have you been here before? (yes/no): ")
 if not show_instructions:
     print("**************************")
     print("        INSTRUCTIONS      ")
