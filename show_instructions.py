@@ -1,21 +1,16 @@
 def yes_no(question):
+    while True:
+        response = input(question).lower()
+        if response == "yes" or response == "y":
+            return True
+        elif response == "no" or response == "n":
+            return False
+        else:
+            print("Invalid input. Please enter 'yes' or 'no'.")
 
-  valid = False 
-  while not valid:
-    watched_before = input(question).lower()
-  
-    if watched_before == "yes" or watched_before == "y":
-      return watched_before
-      
-    elif watched_before == "no" or watched_before == "n":
-      return watched_before
-    
-    else:
-      print("Invalid input please enter yes or no")
-
-valid = False 
-while not valid:
-  show_instructions = yes_no("Have you watched this before ?: ")
-  if show_instructions == "no":
+show_instructions = yes_no("Have you watched this before? (yes/no): ")
+if not show_instructions:
     print("Instructions")
+
+
       
