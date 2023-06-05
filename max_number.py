@@ -1,5 +1,5 @@
 def sell_tickets():
-    max_tickets = 5
+    max_tickets = 1
     tickets_sold = 0
     exit_code = "nvm"
 
