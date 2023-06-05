@@ -10,6 +10,10 @@ def sell_tickets():
             print(f"There are {max_tickets} tickets left.")
 
         name = input("Enter your name: ")
+        if name.strip() == "":
+            print("Invalid input. Name cannot be blank.")
+            continue
+
         if name.lower() == exit_code:
             print(f"Ticket sales completed. {tickets_sold} tickets were sold.")
             break
@@ -24,6 +28,7 @@ def sell_tickets():
 
 # Call the function to sell tickets
 sell_tickets()
+
 
 
 
