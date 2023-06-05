@@ -1,7 +1,7 @@
 def sell_tickets():
-    max_tickets = 1
+    max_tickets = 5
     tickets_sold = 0
-    exit_code = "xxx"
+    exit_code = "nvm"
 
     while max_tickets > 0:
         if max_tickets == 1:
@@ -25,7 +25,7 @@ def sell_tickets():
             continue
 
         if name.lower() == exit_code:
-            print(f"Ticket sales completed. {tickets_sold} tickets were sold the profits are {profit}.")
+            print(f"Ticket sales completed. {tickets_sold} tickets were sold.")
             break
 
         if age >= 12 and age <= 15:
@@ -41,7 +41,7 @@ def sell_tickets():
         tickets_sold += 1
         max_tickets -= 1
 
-        print(f"Ticket price: ${ticket_price}.")
+        print(f"Ticket price: ${ticket_price}")
 
     if tickets_sold == 0:
         print("No tickets were sold.")
@@ -49,10 +49,10 @@ def sell_tickets():
         print("There are no more tickets available.")
         print(f"Total Profits ${profit}")
     
-    
 
 # Call the function to sell tickets
 sell_tickets()
+
 
 
 
